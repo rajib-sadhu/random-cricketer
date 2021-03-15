@@ -69,6 +69,14 @@ main{
     align-items: center;
     justify-content: center;
 }
+#form_div{
+    background-color: aliceblue;
+    width: 100vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #loading{
 	position: fixed;
 	width: 100%;
