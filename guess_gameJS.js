@@ -12,6 +12,7 @@
         img.src="images/india/"+random_number+".png";
          var btn=document.getElementById("btn");
         btn.disabled=true;
+          document.getElementById("span").innerHTML="you get once chance to see your player";
 
     }
 
