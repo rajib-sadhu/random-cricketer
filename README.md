@@ -1,2 +1,2 @@
 # random-cricketer
-This Site Create fo testing and feedback
+This Site Create fo testing and feedback from users
