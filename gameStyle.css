@@ -71,6 +71,21 @@ main{
     align-items: center;
     justify-content: center;
 }
+#btn:focus{
+    color: #706fd3;
+    border: 2px solid #0f0cc7;
+    box-shadow: 0px 0px 0px 1px #706fd3;
+    animation: anim-shadow .3s forwards;
+}
+#btn:hover{
+    color: #706fd3;
+    border: 2px solid #0f0cc7;
+}
+@keyframes anim-shadow{
+    100%{
+        box-shadow: 0px 0px 50px 20px #706fd3;
+    }
+}
 #form_div{
     background-color: aliceblue;
     width: 100vw;
