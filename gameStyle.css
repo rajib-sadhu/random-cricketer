@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+
+body{
+    background-color: rgb(61, 61, 61);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100vw;
+    height: 15vh;
+    background: pink;
+}
+.main_head{
+    flex: 1;
+    background: rgb(223, 115, 115);
+    width: 20vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 1px solid black;
+    color: antiquewhite;
+    font-size: small;
+}
+.main_head h1{
+
+}
+
+.main_btn{
+   flex: 1;
+   margin: 10px;
+
+}
+.main_btn button{
+    padding: 5px;
+    color: beige;
+    background: blue;
+    border-radius: 2px;
+}
+.main_guess{
+    flex: 1;
+    height: 80vh;
+    width: 30vw;
+    background-color: rgb(68, 165, 245);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+main{
+    width: 100vw;
+    height: 60vh;
+    background: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: rgb(0, 0, 0)
+	url('images/loading.gif')
+	 no-repeat center center;	
+	z-index: 99999;
+}
