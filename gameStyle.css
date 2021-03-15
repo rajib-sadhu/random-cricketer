@@ -17,6 +17,9 @@ header{
     width: 100vw;
     height: 15vh;
     background: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main_head{
     flex: 1;
@@ -70,4 +73,16 @@ main{
 	url('images/loading.gif')
 	 no-repeat center center;	
 	z-index: 99999;
+}
+@media (max-width: 760px){
+    .main_head{
+        
+        width: 100vw;
+    }
+    .main_guess img{
+        width: 100vw;
+    }
+    header h1{
+        font-size: 25px;
+    }
 }
