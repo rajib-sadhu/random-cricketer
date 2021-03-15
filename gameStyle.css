@@ -21,6 +21,10 @@ header{
     align-items: center;
     justify-content: center;
 }
+#span{
+    color: aliceblue;
+    
+}
 .main_head{
     flex: 1;
     background: rgb(223, 115, 115);
