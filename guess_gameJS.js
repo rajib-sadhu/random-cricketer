@@ -10,6 +10,8 @@
         var random_number = Math.floor(Math.random()*27)+1;
 
         img.src="images/india/"+random_number+".png";
+         var btn=document.getElementById("btn");
+        btn.disabled=true;
 
     }
 
