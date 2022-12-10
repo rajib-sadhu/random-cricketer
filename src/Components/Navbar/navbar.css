@@ -1,0 +1,149 @@
+
+
+nav .active{
+    color: aliceblue;
+}
+
+li{
+    list-style: none;
+}
+
+.nav{
+    width: 100%;
+    height: 8rem;
+    background-color: #460C68;
+    display: grid;
+    /* align-items: center;
+    justify-content: center; */
+    grid-template-columns:10rem 1fr 1fr 1fr 10rem;
+    position: relative;
+}
+.nav a{
+    font-size: 3rem;
+    text-decoration: none;
+    color: #fff;
+    grid-column: 2/3;
+    display: grid;
+    align-items: center;
+    justify-content: start;
+}
+
+.nav .links{
+    height: 8rem;
+    grid-column: 4/5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .links .navLink{
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #F56EB3 ;
+    cursor: pointer;
+    padding: .5rem .5rem;
+    font-weight: bold;
+}
+.mobileLinks{
+    transition: all .2s linear;
+    position: absolute;
+    margin-top: 8rem;
+    height: 20rem;
+    width: 100%;
+    background-color: #460C68;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    border: 1px solid #fff;
+    z-index: 2;
+}
+.mobileLinks li:first-child{
+    transition-delay: .2s;
+}
+
+.mobileLinks .navLink{
+    padding: .5rem 5rem;
+    width: 5rem;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 1rem;
+    color: #fff;
+    /* box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.75); */
+}
+
+
+.hamburgerMenu button{
+    color: #fff;
+}
+
+
+.nav .links .navLink:hover{
+    background-color: #F56EB3 ;
+    color: #460C68;
+    
+    border: 1px solid #fff;
+    border-radius: .2rem;
+}
+
+.hamburgerMenu{
+    display: none;
+}
+
+
+
+
+
+/*    responsive     */
+
+@media (max-width:998px) {
+
+    .nav{
+    grid-template-columns:5rem 1fr 1fr 1fr 5rem;
+    }
+
+    .nav a{
+        font-size: 3rem;
+    }
+    .nav .links{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: block;
+        font-size: 3rem;
+        position: absolute;
+        right: 5rem;
+        bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hamburgerMenu a{
+        color: #fff;
+    }
+}
+
+@media (max-width:500px) {
+    .nav a{
+        font-size: 1.5rem;
+    }
+    .nav{
+        height: 4rem;
+        grid-template-columns:2rem 1fr 1fr 1fr 2rem;
+    }
+    .hamburgerMenu{
+        right: 2rem;
+        bottom: 1.3rem;
+        font-size: 1.5rem;
+    }
+    .mobileLinks{
+        margin-top: 4rem;
+        height: 20rem;
+    }
+    .mobileLinks .navLink{
+        font-size: 1.2rem;
+        margin-left: -3.5rem;
+    }
+}

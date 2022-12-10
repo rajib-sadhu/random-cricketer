@@ -1,0 +1,31 @@
+
+
+
+
+.footerDiv{
+    width: 100%;
+    height: auto;
+    background-color: #460C68;
+    display: grid;
+    place-items:center;
+    color: #ffc5e3;
+    padding: 1rem;
+}
+.footerDiv .hash{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.footerDiv p{
+    font-size: 1.5rem;
+}
+
+/*  responsive    */
+
+@media (max-width:500px) {
+   .footerDiv .hash{
+    font-size: 2rem;
+   }
+   .footerDiv p{
+    font-size: 1rem;
+   }
+}
