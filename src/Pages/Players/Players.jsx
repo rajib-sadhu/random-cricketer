@@ -19,19 +19,19 @@ const Players = () => {
     const handleClick =()=>{
 
         const folder_random = Math.floor(Math.random()*3)+1;
-        // console.log(folder_random);
+        console.log( "folder- "+ folder_random);
         setImg(false)
         setGif(<img className='image' src='https://i.ibb.co/qYYvcpv/istockphoto-531294703-1024x1024.gif' alt=''/>)
 
         setTimeout(()=>{
 
-            if(folder_random===3){
+            if(folder_random===1){
                 const ind_random = Math.floor(Math.random()*27);
                
                 setPlayer(PlayerData[0]?.players[ind_random]?.imgsrc);
                 setName(PlayerData[0]?.players[ind_random]?.name);
                 setDesh(PlayerData[0]?.country);
-                // console.log("India "+ind_random);
+                console.log("India "+ind_random);
             }
              if(folder_random===2){
                 const aus_random = Math.floor(Math.random()*5);
@@ -39,15 +39,15 @@ const Players = () => {
                 setPlayer(PlayerData[1]?.players[aus_random]?.imgsrc);
                 setName(PlayerData[1]?.players[aus_random]?.name);
                 setDesh(PlayerData[1]?.country);
-                // console.log("Australia "+aus_random);
+                console.log("Australia "+aus_random);
             }
-             if(folder_random===1){
+             if(folder_random===3){
                 const eng_random = Math.floor(Math.random()*4);
     
                 setPlayer(PlayerData[2]?.players[eng_random]?.imgsrc);
                 setName(PlayerData[2]?.players[eng_random]?.name);
                 setDesh(PlayerData[2]?.country);
-                // console.log("England "+eng_random);
+                console.log("England "+eng_random);
             }
     
             setImg(true);
